@@ -5,6 +5,9 @@ export const config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
+    hostname: 'localhost',
+    port: 4444,
+    path: '/',
     //
     // ==================
     // Specify Test Files
@@ -103,7 +106,7 @@ export const config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [
         [
-            'chromedriver'
+            'docker'
         ]
     ],
     //
